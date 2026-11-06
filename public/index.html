@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Boutique</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 1000px;
+      margin: 35px auto;
+      padding: 0 15px;
+    }
+    h1 { color: #243b53; }
+    form, section { margin: 24px 0; }
+    label { display: inline-block; margin: 8px 12px 8px 0; }
+    input, select, button { padding: 9px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td {
+      text-align: left;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    button, a { margin-right: 5px; }
+    #message { min-height: 22px; font-weight: bold; }
+  </style>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <h1>Boutique - suivi des commandes</h1>
+  <p>Les commandes et les stocks sont synchronisés</p>
+
+  <section>
+    <h2>Stocks disponibles</h2>
+    <ul id="stocks"></ul>
+  </section>
+
+  <section>
+    <h2>Créer une commande</h2>
+    <form id="order-form">
+      <label>
+        Client
+        <select id="userId" required></select>
+      </label>
+
+      <label>
+        Produit
+        <select id="productId" required></select>
+      </label>
+
+      <label>
+        Quantité
+        <input id="quantity" type="number" min="1" value="1" required>
+      </label>
+
+      <button type="submit">Commander</button>
+    </form>
+
+    <p id="message" role="status"></p>
+  </section>
+
+  <section>
+    <h2>Commandes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Client</th>
+          <th>Produit</th>
+          <th>Qté</th>
+          <th>Statut</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="orders"></tbody>
+    </table>
+  </section>
+</body>
+</html>
