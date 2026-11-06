@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Suivi de commande en direct</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 15px;
+    }
+    h1 { color: #243b53; }
+    #status {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    #connection { color: #555; }
+    li { margin: 8px 0; }
+  </style>
+
+  <script src="/suivi.js" defer></script>
+</head>
+<body>
+  <p><a href="/">← Retour à la boutique</a></p>
+
+  <h1>
+    Suivi de la commande
+    <span id="order-id"></span>
+  </h1>
+
+  <p id="details">Chargement...</p>
+
+  <p>
+    Statut :
+    <strong id="status">...</strong>
+  </p>
+
+  <p id="connection" role="status"></p>
+
+  <h2>Événements reçus</h2>
+  <ul id="history"></ul>
+</body>
+</html>
