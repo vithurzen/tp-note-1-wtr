@@ -1,0 +1,40 @@
+{
+  "state": {
+    "users": [
+      {
+        "id": 1,
+        "name": "Alice Martin",
+        "username": "alice",
+        "email": "alice@example.com"
+      },
+      {
+        "id": 2,
+        "name": "Francois Dupont",
+        "username": "francois",
+        "email": "francois@example.com"
+      }
+    ],
+    "products": [
+      {
+        "id": 1,
+        "name": "Clavier",
+        "stock": 10
+      },
+      {
+        "id": 2,
+        "name": "Souris",
+        "stock": 15
+      },
+      {
+        "id": 3,
+        "name": "Casque",
+        "stock": 5
+      }
+    ],
+    "orders": [],
+    "events": [],
+    "lastEventId": 0,
+    "nextOrderId": 1,
+    "shippedAt": {}
+  }
+}

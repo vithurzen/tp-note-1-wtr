@@ -1,0 +1,35 @@
+{
+  "name": "tp-note-1-wtr",
+  "version": "1.0.0",
+  "description": "Lien github: https://github.com/vithurzen/tp-note-1-wtr",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vithurzen/tp-note-1-wtr.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vithurzen/tp-note-1-wtr/issues"
+  },
+  "homepage": "https://github.com/vithurzen/tp-note-1-wtr#readme",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "node-json-db": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
